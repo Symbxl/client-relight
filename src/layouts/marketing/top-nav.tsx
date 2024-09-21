@@ -11,7 +11,8 @@ import {
   IconButton,
   Stack,
   SvgIcon,
-  useMediaQuery
+  useMediaQuery,
+  Link
 } from '@mui/material';
 import { alpha } from '@mui/material/styles';
 import { Logo } from 'src/components/logo';
@@ -148,61 +149,12 @@ export const TopNav: FC<TopNavProps> = (props) => {
                     }
                   }}
                 >
-                  Devias Kit <span>PRO</span>
+                  Relight Exterior Lighting <span>HOA's, Residential & Commercial</span>
                 </Box>
               )}
             </Stack>
-            <Chip
-              label="v6.1.0"
-              size="small"
-            />
-          </Stack>
-          {mdUp && (
-            <Stack
-              alignItems="center"
-              direction="row"
-              spacing={2}
-            >
-              <Box
-                component="nav"
-                sx={{ height: '100%' }}
-              >
-                <Stack
-                  component="ul"
-                  alignItems="center"
-                  justifyContent="center"
-                  direction="row"
-                  spacing={1}
-                  sx={{
-                    height: '100%',
-                    listStyle: 'none',
-                    m: 0,
-                    p: 0
-                  }}
-                >
-                  <>
-                    {items.map((item) => {
-                      const checkPath = !!(item.path && pathname);
-                      const partialMatch = checkPath ? pathname.includes(item.path!) : false;
-                      const exactMatch = checkPath ? pathname === item.path : false;
-                      const active = item.popover ? partialMatch : exactMatch;
 
-                      return (
-                        <TopNavItem
-                          active={active}
-                          external={item.external}
-                          key={item.title}
-                          path={item.path}
-                          popover={item.popover}
-                          title={item.title}
-                        />
-                      );
-                    })}
-                  </>
-                </Stack>
-              </Box>
-            </Stack>
-          )}
+          </Stack>
           <Stack
             alignItems="center"
             direction="row"
@@ -213,19 +165,12 @@ export const TopNav: FC<TopNavProps> = (props) => {
             <Button
               component="a"
               size={mdUp ? 'medium' : 'small'}
-              href="https://mui.com/store/items/devias-kit-pro"
+              href="contact"
               target="_blank"
               variant="contained"
             >
-              Purchase Now
+              Get a quote
             </Button>
-            {!mdUp && (
-              <IconButton onClick={onMobileNavOpen}>
-                <SvgIcon fontSize="small">
-                  <Menu01Icon />
-                </SvgIcon>
-              </IconButton>
-            )}
           </Stack>
         </Stack>
       </Container>

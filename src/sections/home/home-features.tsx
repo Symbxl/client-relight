@@ -22,40 +22,33 @@ interface Feature {
 
 const features: Feature[] = [
   {
-    id: 'experts',
-    title: 'Built by experts',
+    id: 'Accent Lighting',
+    title: 'Accent Lighting',
     description: 'All of the code follows MUI best practices, it’s written by our in-house team of experts.',
-    imageDark: '/assets/home-features-experts-dark.png',
-    imageLight: '/assets/home-features-experts-light.png'
+    imageDark: 'https://framerusercontent.com/images/syG1Lx8V7godxgeio5OukDhEkks.webp',
+    imageLight: 'https://framerusercontent.com/images/syG1Lx8V7godxgeio5OukDhEkks.webp'
   },
   {
-    id: 'figma',
-    title: 'Design Files',
+    id: 'Holiday Lighting',
+    title: 'Holiday Lighting',
     description: 'We\'ve included the source Figma files to Plus & Extended licenses so you can get creative! Build layouts with confidence.',
-    imageDark: '/assets/home-features-figma-dark.png',
-    imageLight: '/assets/home-features-figma-light.png'
+    imageDark: 'https://framerusercontent.com/images/QgR67iGl7v2MqarT07ikjKa1hLE.webp?scale-down-to=512',
+    imageLight: 'https://framerusercontent.com/images/QgR67iGl7v2MqarT07ikjKa1hLE.webp?scale-down-to=512'
   },
   {
-    id: 'tech',
-    title: 'Built with modern technologies',
+    id: 'Security Lighting',
+    title: 'Security Lighting',
     description: 'Each template is a well-structured CRA & Next.js project, giving you a codebase that’s productive and enjoyable to work in.',
-    imageDark: '/assets/home-features-tech-dark.png',
-    imageLight: '/assets/home-features-tech-light.png'
+    imageDark: 'https://framerusercontent.com/images/2tuUvfSINeF9nvtfJpAHgJnhHK8.webp?scale-down-to=512',
+    imageLight: 'https://framerusercontent.com/images/2tuUvfSINeF9nvtfJpAHgJnhHK8.webp?scale-down-to=512'
   },
   {
-    id: 'customize',
-    title: 'Easy to customize',
+    id: 'GameDay Lighting',
+    title: 'GameDay Lighting',
     description: 'Everything is styled using global theme overrides, just open the theme file in your editor and change whatever you want.',
-    imageDark: '/assets/home-features-customize-dark.png',
-    imageLight: '/assets/home-features-customize-light.png'
+    imageDark: 'https://framerusercontent.com/images/ETVoKRP6J6fm6muP2Xs7J4WWKzU.webp?scale-down-to=512',
+    imageLight: 'https://framerusercontent.com/images/ETVoKRP6J6fm6muP2Xs7J4WWKzU.webp?scale-down-to=512'
   },
-  {
-    id: 'productive',
-    title: 'Built with CRA & Next.js',
-    description: 'Well-structured, thoughtfully componentized CRA & Next.js project, giving you a codebase that’s productive and enjoyable to work in.',
-    imageDark: '/assets/home-features-nextjs-dark.png',
-    imageLight: '/assets/home-features-nextjs-light.png'
-  }
 ];
 
 export const HomeFeatures: FC = () => {
@@ -67,11 +60,10 @@ export const HomeFeatures: FC = () => {
   return (
     <Box
       sx={{
-        backgroundColor: 'neutral.800',
+        backgroundColor: 'inherit',
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'top center',
-        backgroundImage: 'url("/assets/gradient-bg.svg")',
-        color: 'common.white',
+        color: 'inherit',
         py: '120px'
       }}
     >
@@ -85,14 +77,14 @@ export const HomeFeatures: FC = () => {
             color="inherit"
             variant="h3"
           >
-            Everything you need to run your project.
+            Illuminate your home for every occasion!
           </Typography>
           <Typography
             align="center"
             color="inherit"
             variant="subtitle2"
           >
-            Not just a set of tools, the package includes ready-to-deploy conceptual application.
+            The all-in-one outdoor lighting solution, perfect for Companies, Homeowners & HOAs
           </Typography>
         </Stack>
         <Grid
@@ -104,7 +96,7 @@ export const HomeFeatures: FC = () => {
             xs={12}
             md={6}
           >
-            <Stack spacing={1}>
+            <Stack spacing={2}>
               {features.map((feature, index) => {
                 const isActive = activeFeature === index;
 
@@ -114,7 +106,7 @@ export const HomeFeatures: FC = () => {
                     onClick={() => setActiveFeature(index)}
                     sx={{
                       borderRadius: 2.5,
-                      color: 'neutral.400',
+                      color: 'inherit',
                       cursor: 'pointer',
                       p: 3,
                       transition: (theme) => theme.transitions.create(
@@ -127,13 +119,12 @@ export const HomeFeatures: FC = () => {
                       ...(isActive && {
                         backgroundColor: 'primary.alpha12',
                         boxShadow: (theme) => `${theme.palette.primary.main} 0 0 0 1px`,
-                        color: 'common.white'
+                        color: 'inherit'
                       }),
                       '&:hover': {
                         ...(!isActive && {
                           backgroundColor: 'primary.alpha4',
                           boxShadow: (theme) => `${theme.palette.primary.main} 0 0 0 1px`,
-                          color: 'common.white'
                         })
                       }
                     }}
@@ -151,7 +142,7 @@ export const HomeFeatures: FC = () => {
                     >
                       {feature.description}
                     </Typography>
-                    {feature.id === 'figma' && (
+                    {feature.id === 'More' && (
                       <Box sx={{ mt: 3 }}>
                         <Button
                           color="success"
@@ -166,7 +157,7 @@ export const HomeFeatures: FC = () => {
                           target="_blank"
                           variant="contained"
                         >
-                          Preview in Figma
+                          view more use cases
                         </Button>
                       </Box>
                     )}
@@ -182,7 +173,8 @@ export const HomeFeatures: FC = () => {
             <Box
               sx={{
                 '& img': {
-                  width: '100%'
+                  width: '100%',
+                  borderRadius: 2.5,
                 }
               }}
             >

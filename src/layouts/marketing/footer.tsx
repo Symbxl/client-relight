@@ -26,11 +26,11 @@ const sections: Section[] = [
     title: 'Menu',
     items: [
       {
-        title: 'Browse Components',
-        path: paths.components.index
+        title: 'Get a quote',
+        path: '/contact'
       },
       {
-        title: 'Documentation',
+        title: 'Contact Support',
         external: true,
         path: paths.docs
       }
@@ -48,7 +48,7 @@ const sections: Section[] = [
         path: '#'
       },
       {
-        title: 'Contact',
+        title: 'Warranty',
         path: '#'
       }
     ]
@@ -57,7 +57,23 @@ const sections: Section[] = [
     title: 'Social',
     items: [
       {
+        title: 'X',
+        path: '#'
+      },
+      {
         title: 'Instagram',
+        path: '#'
+      },
+      {
+        title: 'Facebook',
+        path: '#'
+      },
+      {
+        title: 'YouTube',
+        path: '#'
+      },
+      {
+        title: 'SnapChat',
         path: '#'
       },
       {
@@ -133,14 +149,14 @@ export const Footer: FC = (props) => (
                   }
                 }}
               >
-                Devias Kit <span>PRO</span>
+                Relight Exterior Lighting
               </Box>
             </Stack>
             <Typography
               color="text.secondary"
               variant="caption"
             >
-              © 2022 Devias IO
+              © 2025 Relight
             </Typography>
           </Stack>
         </Grid>

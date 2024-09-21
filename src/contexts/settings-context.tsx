@@ -42,12 +42,12 @@ const storeSettings = (value: Record<string, any>): void => {
 };
 
 const initialSettings: Settings = {
-  colorPreset: 'indigo',
-  contrast: 'normal',
+  colorPreset: 'blue',
+  contrast: 'high',
   direction: 'ltr',
   layout: 'vertical',
   navColor: 'evident',
-  paletteMode: 'light',
+  paletteMode: 'dark',
   responsiveFontSizes: true,
   stretch: false
 };
@@ -73,10 +73,10 @@ export interface SettingsContextType extends State {
 
 export const SettingsContext = createContext<SettingsContextType>({
   ...initialState,
-  handleDrawerClose: () => {},
-  handleDrawerOpen: () => {},
-  handleReset: () => {},
-  handleUpdate: () => {},
+  handleDrawerClose: () => { },
+  handleDrawerOpen: () => { },
+  handleReset: () => { },
+  handleUpdate: () => { },
   isCustom: false
 });
 

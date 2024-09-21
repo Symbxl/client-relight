@@ -54,34 +54,9 @@ export const Layout: FC<LayoutProps> = (props) => {
           py: '120px'
         }}
       >
+
         <Container maxWidth="lg">
           <Stack spacing={3}>
-            {!breadcrumbs && (
-              <div>
-                <Link
-                  color="text.primary"
-                  component={RouterLink}
-                  href={paths.components.index}
-                  sx={{
-                    alignItems: 'center',
-                    display: 'inline-flex'
-                  }}
-                  underline="hover"
-                >
-                  <SvgIcon sx={{ mr: 1 }}>
-                    <ArrowLeftIcon />
-                  </SvgIcon>
-                  <Typography variant="subtitle2">
-                    Components
-                  </Typography>
-                </Link>
-              </div>
-            )}
-            <div>
-              <Typography variant="h1">
-                {title}
-              </Typography>
-            </div>
             {breadcrumbs && (
               <div>
                 <Breadcrumbs separator={<BreadcrumbsSeparator />}>
@@ -118,10 +93,15 @@ export const Layout: FC<LayoutProps> = (props) => {
           </Stack>
         </Container>
       </Box>
+
       <Divider />
+
+
       <LayoutContainer>
         {children}
       </LayoutContainer>
+
+
     </LayoutRoot>
   );
 };

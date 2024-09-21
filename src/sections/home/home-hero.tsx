@@ -19,21 +19,20 @@ export const HomeHero: FC = () => {
         pt: '120px'
       }}
     >
-      <Container maxWidth="lg">
+      <Container maxWidth="xl">
         <Box maxWidth="sm">
           <Typography
             variant="h1"
-            sx={{ mb: 2 }}
+            sx={{ mb: 2, fontSize: "60px !important" }}
           >
-            Let us worry about the&nbsp;
+            Live Brighter with&nbsp;
             <Typography
               component="span"
               color="primary.main"
               variant="inherit"
             >
-              User Experience
+              Relight Exterior Lighting
             </Typography>
-            , you focus on Developing.
           </Typography>
           <Typography
             color="text.secondary"
@@ -42,8 +41,6 @@ export const HomeHero: FC = () => {
               fontWeight: 500
             }}
           >
-            A professional kit that comes with ready-to-use MUI components developed with one common
-            goal in mind, help you build faster & beautiful applications.
           </Typography>
           <Stack
             alignItems="center"
@@ -69,7 +66,7 @@ export const HomeHero: FC = () => {
               color="text.secondary"
               variant="caption"
             >
-              based on (70+ reviews)
+              based on (100+ reviews)
             </Typography>
           </Stack>
           <Stack
@@ -103,19 +100,7 @@ export const HomeHero: FC = () => {
               }
               variant="contained"
             >
-              Live Demo
-            </Button>
-            <Button
-              color="inherit"
-              component={RouterLink}
-              href={paths.components.index}
-              startIcon={(
-                <SvgIcon fontSize="small">
-                  <LayoutBottomIcon />
-                </SvgIcon>
-              )}
-            >
-              Components
+              Get a quote
             </Button>
           </Stack>
         </Box>
@@ -128,7 +113,7 @@ export const HomeHero: FC = () => {
           <Box
             sx={{
               overflow: 'hidden',
-              width: '90%',
+              width: '100%',
               fontSize: 0,
               mt: -2, // hack to cut the bottom box shadow
               mx: -2,
@@ -142,32 +127,19 @@ export const HomeHero: FC = () => {
               }
             }}
           >
-            <img
-              src={
-                theme.palette.mode === 'dark'
-                  ? '/assets/home-thumbnail-dark.png'
-                  : '/assets/home-thumbnail-light.png'
-              }
+            <video
+              src="https://framerusercontent.com/assets/ft2iKY1K0qOfCpm8003q4eoJJc.mp4"
+              autoPlay
+              muted
+              loop
+              playsInline
+              style={{ width: '100%', height: '100%', borderRadius: "12px" }}
             />
+
           </Box>
-          <Box
-            sx={{
-              maxHeight: '100%',
-              maxWidth: '100%',
-              overflow: 'hidden',
-              position: 'absolute',
-              right: 0,
-              top: 40,
-              '& > div': {
-                height: 460,
-                width: 560
-              }
-            }}
-          >
-            <HomeCodeSamples />
-          </Box>
+
         </Box>
-      </Container>
-    </Box>
+      </Container >
+    </Box >
   );
 };

@@ -104,32 +104,6 @@ const Page: PageType = () => {
               Have questions about integrating our APIs? Fill out the form
               and a senior web expert will be in touch shortly.
             </Typography>
-            <Typography
-              color="primary"
-              sx={{ mb: 3 }}
-              variant="h6"
-            >
-              Join 6,000+ forward-thinking companies:
-            </Typography>
-            <Stack
-              alignItems="center"
-              direction="row"
-              flexWrap="wrap"
-              gap={4}
-              sx={{
-                color: 'text.primary',
-                '& > *': {
-                  flex: '0 0 auto'
-                }
-              }}
-            >
-              <LogoSamsung />
-              <LogoVisma />
-              <LogoBolt />
-              <LogoAws />
-              <LogoAccenture />
-              <LogoAtt />
-            </Stack>
           </Container>
         </Box>
         <Box

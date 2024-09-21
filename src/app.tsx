@@ -1,7 +1,6 @@
 import type { FC } from 'react';
 import { useRoutes } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
-import { Provider as ReduxProvider } from 'react-redux';
 import { ThemeProvider } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
@@ -37,82 +36,80 @@ export const App: FC = () => {
   const element = useRoutes(routes);
 
   return (
-    <ReduxProvider store={store}>
-      <LocalizationProvider dateAdapter={AdapterDateFns}>
-        <AuthProvider>
-          <AuthConsumer>
-            {(auth) => (
-              <SettingsProvider>
-                <SettingsConsumer>
-                  {(settings) => {
-                    // Prevent theme flicker when restoring custom settings from browser storage
-                    if (!settings.isInitialized) {
-                      // return null;
-                    }
+    <LocalizationProvider dateAdapter={AdapterDateFns}>
+      <AuthProvider>
+        <AuthConsumer>
+          {(auth) => (
+            <SettingsProvider>
+              <SettingsConsumer>
+                {(settings) => {
+                  // Prevent theme flicker when restoring custom settings from browser storage
+                  if (!settings.isInitialized) {
+                    // return null;
+                  }
 
-                    const theme = createTheme({
-                      colorPreset: settings.colorPreset,
-                      contrast: settings.contrast,
-                      direction: settings.direction,
-                      paletteMode: settings.paletteMode,
-                      responsiveFontSizes: settings.responsiveFontSizes
-                    });
+                  const theme = createTheme({
+                    colorPreset: settings.colorPreset,
+                    contrast: settings.contrast,
+                    direction: settings.direction,
+                    paletteMode: settings.paletteMode,
+                    responsiveFontSizes: settings.responsiveFontSizes
+                  });
 
-                    // Prevent guards from redirecting
-                    const showSlashScreen = !auth.isInitialized;
+                  // Prevent guards from redirecting
+                  const showSlashScreen = !auth.isInitialized;
 
-                    return (
-                      <ThemeProvider theme={theme}>
-                        <Helmet>
-                          <meta
-                            name="color-scheme"
-                            content={settings.paletteMode}
-                          />
-                          <meta
-                            name="theme-color"
-                            content={theme.palette.neutral[900]}
-                          />
-                        </Helmet>
-                        <RTL direction={settings.direction}>
-                          <CssBaseline />
-                          {
-                            showSlashScreen
-                              ? <SplashScreen />
-                              : (
-                                <>
-                                  {element}
-                                  <SettingsButton onClick={settings.handleDrawerOpen} />
-                                  <SettingsDrawer
-                                    canReset={settings.isCustom}
-                                    onClose={settings.handleDrawerClose}
-                                    onReset={settings.handleReset}
-                                    onUpdate={settings.handleUpdate}
-                                    open={settings.openDrawer}
-                                    values={{
-                                      colorPreset: settings.colorPreset,
-                                      contrast: settings.contrast,
-                                      direction: settings.direction,
-                                      paletteMode: settings.paletteMode,
-                                      responsiveFontSizes: settings.responsiveFontSizes,
-                                      stretch: settings.stretch,
-                                      layout: settings.layout,
-                                      navColor: settings.navColor
-                                    }}
-                                  />
-                                </>
-                              )
-                          }
-                          <Toaster />
-                        </RTL>
-                      </ThemeProvider>
-                    );
-                  }}
-                </SettingsConsumer>
-              </SettingsProvider>
-            )}
-          </AuthConsumer>
-        </AuthProvider>
-      </LocalizationProvider>
-    </ReduxProvider>
+                  return (
+                    <ThemeProvider theme={theme}>
+                      <Helmet>
+                        <meta
+                          name="color-scheme"
+                          content={settings.paletteMode}
+                        />
+                        <meta
+                          name="theme-color"
+                          content={theme.palette.neutral[900]}
+                        />
+                      </Helmet>
+                      <RTL direction={settings.direction}>
+                        <CssBaseline />
+                        {
+                          showSlashScreen
+                            ? <SplashScreen />
+                            : (
+                              <>
+                                {element}
+                                <SettingsButton onClick={settings.handleDrawerOpen} />
+                                <SettingsDrawer
+                                  canReset={settings.isCustom}
+                                  onClose={settings.handleDrawerClose}
+                                  onReset={settings.handleReset}
+                                  onUpdate={settings.handleUpdate}
+                                  open={settings.openDrawer}
+                                  values={{
+                                    colorPreset: settings.colorPreset,
+                                    contrast: settings.contrast,
+                                    direction: settings.direction,
+                                    paletteMode: settings.paletteMode,
+                                    responsiveFontSizes: settings.responsiveFontSizes,
+                                    stretch: settings.stretch,
+                                    layout: settings.layout,
+                                    navColor: settings.navColor
+                                  }}
+                                />
+                              </>
+                            )
+                        }
+                        <Toaster />
+                      </RTL>
+                    </ThemeProvider>
+                  );
+                }}
+              </SettingsConsumer>
+            </SettingsProvider>
+          )}
+        </AuthConsumer>
+      </AuthProvider>
+    </LocalizationProvider>
   );
 };
