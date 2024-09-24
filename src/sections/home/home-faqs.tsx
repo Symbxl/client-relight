@@ -19,26 +19,27 @@ interface FaqType {
 
 const faqs: FaqType[] = [
   {
-    question: 'Q1 ?',
-    answer: 'A1'
+    question: 'What is ReLight permanent outdoor lighting?',
+    answer: 'ReLight offers a permanent outdoor lighting solution designed for year-round use, providing customizable and energy-efficient lighting for homes and businesses.'
   },
   {
-    question: 'Q2 ',
-    answer: 'A2'
+    question: 'How durable is the ReLight system?',
+    answer: 'ReLight systems are built to withstand harsh weather conditions, including rain, snow, and extreme temperatures. The materials used ensure longevity and reliability.'
   },
   {
-    question: 'Q3?',
-    answer: 'A3'
+    question: 'Can I control the lighting from my phone?',
+    answer: 'Yes, ReLight comes with a user-friendly mobile app that allows you to control the lighting, set schedules, and choose different color themes right from your phone.'
   },
   {
-    question: 'Q4?',
-    answer: 'A4'
+    question: 'Is the installation process complicated?',
+    answer: 'Not at all. ReLight’s installation is handled by trained professionals, ensuring a seamless process. Once installed, the system requires minimal maintenance.'
   },
   {
-    question: 'Q5?',
-    answer: 'A5.'
+    question: 'Can I use the lights for special occasions?',
+    answer: 'Absolutely. ReLight’s system allows for full customization, so you can adjust the lighting for holidays, parties, or any special event with just a few taps on the app.'
   }
 ];
+
 
 interface FaqProps {
   answer: string;

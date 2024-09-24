@@ -54,35 +54,36 @@ interface Review {
 const reviews: Review[] = [
   {
     author: 'Oded R.',
-    message: 'I\'m highly satisfied with our decision to use this template. It\'s actually 2 for 1 - we got a beautiful design(responsive, looks great with so many different options and components) AND we got an excellent source code with an actual project [...]',
+    message: 'I\'m highly satisfied with ReLight’s permanent outdoor lighting. The installation was smooth, and the lights look stunning on our house. The system is easy to control, and we love using different themes for holidays!',
     stars: 5
   },
   {
     author: 'Mark S.',
-    message: 'I really like the depth and quality with this template. Well constructed and a very useful source of ideas and best practices. I highly recommend it.',
+    message: 'ReLight has exceeded my expectations! The build quality is top-notch, and the mobile app makes it easy to change the lights depending on the occasion. Highly recommend it to anyone looking for permanent outdoor lighting.',
     stars: 5
   },
   {
     author: 'Lorenz N.',
-    message: 'It comes packed with probably more components and feature samples than you will ever need in a single App. The code is well structured and the documentation covers all essential parts. They are maybe not covering [...]',
+    message: 'The customization options with ReLight are fantastic. I never thought we’d use so many different lighting modes, but we do! The product is well-built and designed to last.',
     stars: 5
   },
   {
     author: 'Ruthy G.',
-    message: 'I received a kind, considerate and immediate response, thank you very much!',
+    message: 'Amazing customer service! The team at ReLight was very responsive and helpful during the installation process. We are very happy with the result and the lighting looks great!',
     stars: 5
   },
   {
     author: 'Dean H.',
-    message: 'While many templates are next.js, the support is quick and AMAZING and I was able to port this to using react-router v6. Very happy with the quality of everything!!!',
+    message: 'ReLight’s system is incredibly user-friendly. I love how I can control everything from my phone, and the lights are perfect for any occasion—from accent lighting to full-on holiday themes!',
     stars: 5
   },
   {
     author: 'Cole S.',
-    message: 'Great template and great customer support. Easy to customize, code is easy to read, documentation is good. Very happy!',
+    message: 'Great product and excellent customer support. The installation team was professional, and the lights make our home stand out beautifully. Couldn’t be happier with ReLight!',
     stars: 5
   }
 ];
+
 
 export const HomeReviews: FC = () => (
   <div>

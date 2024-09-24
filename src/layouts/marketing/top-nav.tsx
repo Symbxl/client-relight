@@ -163,10 +163,9 @@ export const TopNav: FC<TopNavProps> = (props) => {
             sx={{ flexGrow: 1 }}
           >
             <Button
-              component="a"
+              component={RouterLink}
+              href={paths.contact}
               size={mdUp ? 'medium' : 'small'}
-              href="contact"
-              target="_blank"
               variant="contained"
             >
               Get a quote

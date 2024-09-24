@@ -24,28 +24,28 @@ const features: Feature[] = [
   {
     id: 'Accent Lighting',
     title: 'Accent Lighting',
-    description: 'All of the code follows MUI best practices, it’s written by our in-house team of experts.',
+    description: 'Relight Lighting makes it easy to highlight specific features on your home like peaks or columns, or simply eliminate nightime darkness',
     imageDark: 'https://framerusercontent.com/images/syG1Lx8V7godxgeio5OukDhEkks.webp',
     imageLight: 'https://framerusercontent.com/images/syG1Lx8V7godxgeio5OukDhEkks.webp'
   },
   {
     id: 'Holiday Lighting',
     title: 'Holiday Lighting',
-    description: 'We\'ve included the source Figma files to Plus & Extended licenses so you can get creative! Build layouts with confidence.',
+    description: 'Permanent outdoor Christmas lights not only provide enduring festive charm but offer a covenient and time-saving lighting solution.',
     imageDark: 'https://framerusercontent.com/images/QgR67iGl7v2MqarT07ikjKa1hLE.webp?scale-down-to=512',
     imageLight: 'https://framerusercontent.com/images/QgR67iGl7v2MqarT07ikjKa1hLE.webp?scale-down-to=512'
   },
   {
     id: 'Security Lighting',
     title: 'Security Lighting',
-    description: 'Each template is a well-structured CRA & Next.js project, giving you a codebase that’s productive and enjoyable to work in.',
+    description: 'Relight makes it easier to spot suspicious activity or deter intruders on your property.',
     imageDark: 'https://framerusercontent.com/images/2tuUvfSINeF9nvtfJpAHgJnhHK8.webp?scale-down-to=512',
     imageLight: 'https://framerusercontent.com/images/2tuUvfSINeF9nvtfJpAHgJnhHK8.webp?scale-down-to=512'
   },
   {
     id: 'GameDay Lighting',
     title: 'GameDay Lighting',
-    description: 'Everything is styled using global theme overrides, just open the theme file in your editor and change whatever you want.',
+    description: "Match your lights to your favorite teams' colors to show your team spirit. Make a custom schedule to sync your lights up to gameday. ",
     imageDark: 'https://framerusercontent.com/images/ETVoKRP6J6fm6muP2Xs7J4WWKzU.webp?scale-down-to=512',
     imageLight: 'https://framerusercontent.com/images/ETVoKRP6J6fm6muP2Xs7J4WWKzU.webp?scale-down-to=512'
   },
