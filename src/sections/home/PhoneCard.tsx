@@ -3,15 +3,13 @@ import { Box } from '@mui/material';
 
 interface Props {
   img?: string;
-  url?: string;
-  small?: boolean;
 }
-const PhoneCard = ({ small, url }: Props) => {
+const PhoneCard = ({ img }: Props) => {
   return (
     <Box
       sx={{
         width: '390px',
-        height: small ? "300px" : "844px",
+        height: "844px",
         borderRadius: '50px',
         backgroundColor: '#000',
         boxShadow: '0px 4px 12px rgba(0, 0, 0, 0.3)',
@@ -33,7 +31,7 @@ const PhoneCard = ({ small, url }: Props) => {
         }}
       >
         <img
-          src={url}
+          src={img}
           alt="iPhone Background"
           style={{
             width: '100%',

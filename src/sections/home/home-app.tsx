@@ -1,10 +1,9 @@
 import type { FC } from 'react';
 import { Box, Button, Container, Stack, Typography } from '@mui/material';
-import { PhoneContainer } from './PhoneContainer';
 import Compatible from './AppCompatibility';
 import { wrap } from 'module';
 import Carousel from './home-carousel';
-import PhoneCard from './PhoneCard';
+import PhoneContainer from './PhoneContainer';
 
 export const HomeApp: FC = () => (
   <Box sx={{
@@ -37,7 +36,7 @@ export const HomeApp: FC = () => (
           target="_blank"
           variant="contained"
         >
-          Download Mobile IOS
+          IOS
         </Button>
         <Button
           component="a"
@@ -45,7 +44,7 @@ export const HomeApp: FC = () => (
           target="_blank"
           variant="contained"
         >
-          Download Mobile Android
+          Android
         </Button>
       </Stack>
       <Stack
@@ -54,7 +53,7 @@ export const HomeApp: FC = () => (
         spacing={2}
         sx={{ mt: 3 }}
       >
-        <PhoneCard url="https://framerusercontent.com/images/BzFcQ6E4kSLCxqDCW5lcozO5c.jpeg?scale-down-to=2048" />
+        <PhoneContainer title="title" subtitle="desc" img="https://framerusercontent.com/images/BzFcQ6E4kSLCxqDCW5lcozO5c.jpeg?scale-down-to=2048" />
       </Stack>
 
     </Container>

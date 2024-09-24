@@ -3,19 +3,19 @@ import { Container, Typography, Box } from "@mui/material";
 import '@fontsource/roboto';
 
 interface Props {
-  url?: string;
+  img?: string;
   title: string;
   subtitle: string;
 }
 
-export const PhoneContainer = ({ url, title, subtitle }: Props) => {
+export const PhoneContainer = ({ img, title, subtitle }: Props) => {
   return (
     <Container
       sx={{
         display: 'flex',
         flexDirection: 'column',
         padding: '2rem',
-        color: 'common.white',
+        color: 'theme.primary.main',
         borderRadius: '12px',
         margin: 2,
         maxWidth: '425px',
@@ -49,7 +49,9 @@ export const PhoneContainer = ({ url, title, subtitle }: Props) => {
         </Box>
       </Typography>
 
-      <PhoneCard url={url} />
+      <PhoneCard img={img} />
     </Container>
   );
 };
+
+export default PhoneContainer
