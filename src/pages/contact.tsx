@@ -101,7 +101,7 @@ const Page: PageType = () => {
               sx={{ mb: 3 }}
               variant="body1"
             >
-              Have questions about integrating our APIs? Fill out the form
+              Ready to request a quote or have any questions? Fill out the form
               and a senior web expert will be in touch shortly.
             </Typography>
           </Container>
