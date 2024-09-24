@@ -18,7 +18,6 @@ const Page: PageType = () => {
         <HomeFeatures />
         <HomeInfo />
         <HomeApp />
-        <HomeReviews />
         <HomeFaqs />
       </main>
     </>
