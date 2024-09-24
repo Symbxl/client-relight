@@ -31,7 +31,7 @@ export const HomeHero: FC = () => {
               color="primary.main"
               variant="inherit"
             >
-              ReLight Exterior Lighting
+              Relight Exterior Lighting
             </Typography>
           </Typography>
           <Typography
