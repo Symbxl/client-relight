@@ -22,18 +22,18 @@ interface Feature {
 
 const features: Feature[] = [
   {
-    id: 'Accent Lighting',
-    title: 'Accent Lighting',
-    description: 'Lighting makes it easy to highlight specific features on your home like peaks or columns, or simply eliminate nightime darkness',
-    imageDark: 'https://framerusercontent.com/images/syG1Lx8V7godxgeio5OukDhEkks.webp',
-    imageLight: 'https://framerusercontent.com/images/syG1Lx8V7godxgeio5OukDhEkks.webp'
-  },
-  {
     id: 'Holiday Lighting',
     title: 'Holiday Lighting',
     description: 'Permanent outdoor Christmas lights not only provide enduring festive charm but offer a covenient and time-saving lighting solution.',
     imageDark: 'https://framerusercontent.com/images/QgR67iGl7v2MqarT07ikjKa1hLE.webp?scale-down-to=512',
     imageLight: 'https://framerusercontent.com/images/QgR67iGl7v2MqarT07ikjKa1hLE.webp?scale-down-to=512'
+  },
+  {
+    id: 'Accent Lighting',
+    title: 'Accent Lighting',
+    description: 'Lighting makes it easy to highlight specific features on your home like peaks or columns, or simply eliminate nightime darkness',
+    imageDark: 'https://framerusercontent.com/images/syG1Lx8V7godxgeio5OukDhEkks.webp',
+    imageLight: 'https://framerusercontent.com/images/syG1Lx8V7godxgeio5OukDhEkks.webp'
   },
   {
     id: 'Security Lighting',
@@ -56,6 +56,10 @@ export const HomeFeatures: FC = () => {
   const [activeFeature, setActiveFeature] = useState<number>(0);
   const feature = features[activeFeature];
   const image = theme.palette.mode === 'dark' ? feature?.imageDark : feature?.imageLight;
+  const handleOne = () => setActiveFeature(0)
+  const handleTwo = () => setActiveFeature(1)
+  const handleThree = () => setActiveFeature(2)
+  const handleFour = () => setActiveFeature(3)
 
   return (
     <Box
@@ -105,6 +109,10 @@ export const HomeFeatures: FC = () => {
               }}
             >
               <img src={image} />
+              <Button onClick={handleOne}>•</Button>
+              <Button onClick={handleTwo}>•</Button>
+              <Button onClick={handleThree}>•</Button>
+              <Button onClick={handleFour}>•</Button>
             </Box>
           </Grid>
           <Grid

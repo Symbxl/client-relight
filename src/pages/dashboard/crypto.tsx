@@ -74,6 +74,22 @@ const Page: PageType = () => {
             </Grid>
             <Grid
               xs={12}
+              md={5}
+            >
+              <CryptoCards
+                cards={[
+                  {
+                    id: '79f8212e4245e4c11952f2cf',
+                    brand: 'VISA',
+                    cardNumber: '5823 4492 2385 1102',
+                    expiryDate: '05/28',
+                    holderName: 'Relight'
+                  },
+                ]}
+              />
+            </Grid>
+            <Grid
+              xs={12}
               md={8}
             >
               <Stack

@@ -53,7 +53,7 @@ export const InvoicePreview: FC<InvoicePreviewProps> = (props) => {
             <Logo />
           </Box>
           <Typography variant="subtitle2">
-            www.devias.io
+            www.relight.ca
           </Typography>
         </div>
         <div>
@@ -82,22 +82,11 @@ export const InvoicePreview: FC<InvoicePreviewProps> = (props) => {
             md={4}
           >
             <Typography variant="body2">
-              Street King William, 123
+              RELIGHT ADDRESS HERE
               <br />
-              Level 2, C, 442456
+              Address 2
               <br />
-              San Francisco, CA, USA
-            </Typography>
-          </Grid>
-          <Grid
-            xs={12}
-            md={4}
-          >
-            <Typography variant="body2">
-              Company No. 4675933
-              <br />
-              EU VAT No. 949 67545 45
-              <br />
+              ZipCode
             </Typography>
           </Grid>
           <Grid
@@ -108,9 +97,9 @@ export const InvoicePreview: FC<InvoicePreviewProps> = (props) => {
               align="right"
               variant="body2"
             >
-              accounts@devias.io
+              accounts@relight.ca
               <br />
-              (+40) 652 3456 23
+              (+1) 425-465-1290
             </Typography>
           </Grid>
         </Grid>
@@ -194,7 +183,7 @@ export const InvoicePreview: FC<InvoicePreviewProps> = (props) => {
               Qty
             </TableCell>
             <TableCell>
-              Unit Price
+              Tax
             </TableCell>
             <TableCell align="right">
               Total

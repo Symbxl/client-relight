@@ -22,12 +22,21 @@ const useCourses = (): Course[] => {
   return [
     {
       id: 'c3a2b7331eef8329e2a87c79',
-      description: 'Supplier Training Videos',
+      description: 'Video #1',
       duration: '1 hour',
       media: '#',
       progress: 100,
-      title: 'Relight Service Training'
+      title: 'Relight Basic Training'
     },
+    {
+      id: 'c3a2b7331eef8329e2a87c79',
+      description: 'Video #2',
+      duration: '1 hour',
+      media: '#',
+      progress: 100,
+      title: 'How to properly use & store equipment',
+    },
+
   ];
 };
 
