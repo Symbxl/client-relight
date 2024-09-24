@@ -54,12 +54,12 @@ interface Review {
 const reviews: Review[] = [
   {
     author: 'Oded R.',
-    message: 'I\'m highly satisfied with ReLight’s permanent outdoor lighting. The installation was smooth, and the lights look stunning on our house. The system is easy to control, and we love using different themes for holidays!',
+    message: 'I\'m highly satisfied, the installation was smooth, and the lights look stunning on our house. The system is easy to control, and we love using different themes for holidays!',
     stars: 5
   },
   {
     author: 'Mark S.',
-    message: 'ReLight has exceeded my expectations! The build quality is top-notch, and the mobile app makes it easy to change the lights depending on the occasion. Highly recommend it to anyone looking for permanent outdoor lighting.',
+    message: 'They really has exceeded my expectations! The build quality is top-notch, and the mobile app makes it easy to change the lights depending on the occasion. Highly recommend it to anyone looking for permanent outdoor lighting.',
     stars: 5
   },
   {
@@ -74,7 +74,7 @@ const reviews: Review[] = [
   },
   {
     author: 'Dean H.',
-    message: 'ReLight’s system is incredibly user-friendly. I love how I can control everything from my phone, and the lights are perfect for any occasion—from accent lighting to full-on holiday themes!',
+    message: 'The system is incredibly user-friendly. I love how I can control everything from my phone, and the lights are perfect for any occasion—from accent lighting to full-on holiday themes!',
     stars: 5
   },
   {
@@ -137,7 +137,7 @@ export const HomeReviews: FC = () => (
             color="text.secondary"
             variant="subtitle1"
           >
-            Our template is so simple that people can’t help but fall in love with it. Simplicity is easy when you just skip tons of mission-critical features.
+            Our lighting is so amazing that people can’t help but fall in love with it. Simplicity and functionality made easy when implementing our advanced app features.
           </Typography>
         </Stack>
         <Grid

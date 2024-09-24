@@ -24,7 +24,7 @@ const features: Feature[] = [
   {
     id: 'Accent Lighting',
     title: 'Accent Lighting',
-    description: 'Relight Lighting makes it easy to highlight specific features on your home like peaks or columns, or simply eliminate nightime darkness',
+    description: 'Lighting makes it easy to highlight specific features on your home like peaks or columns, or simply eliminate nightime darkness',
     imageDark: 'https://framerusercontent.com/images/syG1Lx8V7godxgeio5OukDhEkks.webp',
     imageLight: 'https://framerusercontent.com/images/syG1Lx8V7godxgeio5OukDhEkks.webp'
   },
@@ -38,7 +38,7 @@ const features: Feature[] = [
   {
     id: 'Security Lighting',
     title: 'Security Lighting',
-    description: 'Relight makes it easier to spot suspicious activity or deter intruders on your property.',
+    description: 'Lighting makes it easier to spot suspicious activity or deter intruders on your property.',
     imageDark: 'https://framerusercontent.com/images/2tuUvfSINeF9nvtfJpAHgJnhHK8.webp?scale-down-to=512',
     imageLight: 'https://framerusercontent.com/images/2tuUvfSINeF9nvtfJpAHgJnhHK8.webp?scale-down-to=512'
   },

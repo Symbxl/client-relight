@@ -53,7 +53,7 @@ export const HomeApp: FC = () => (
         spacing={2}
         sx={{ mt: 3 }}
       >
-        <PhoneContainer title="title" subtitle="desc" img="https://framerusercontent.com/images/BzFcQ6E4kSLCxqDCW5lcozO5c.jpeg?scale-down-to=2048" />
+        <PhoneContainer title=" " subtitle=" " img="https://framerusercontent.com/images/BzFcQ6E4kSLCxqDCW5lcozO5c.jpeg?scale-down-to=2048" />
       </Stack>
 
     </Container>

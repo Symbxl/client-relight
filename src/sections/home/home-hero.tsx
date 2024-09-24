@@ -102,34 +102,6 @@ export const HomeHero: FC = () => {
             >
               Get a quote
             </Button>
-            <Button
-              component={RouterLink}
-              href={paths.dashboard.index}
-              startIcon={(
-                <SvgIcon fontSize="small">
-                  <EyeIcon />
-                </SvgIcon>
-              )}
-              sx={(theme) => theme.palette.mode === 'dark'
-                ? {
-                  backgroundColor: 'neutral.50',
-                  color: 'neutral.900',
-                  '&:hover': {
-                    backgroundColor: 'neutral.200'
-                  }
-                }
-                : {
-                  backgroundColor: 'neutral.900',
-                  color: 'neutral.50',
-                  '&:hover': {
-                    backgroundColor: 'neutral.700'
-                  }
-                }
-              }
-              variant="contained"
-            >
-              view relight dashboard
-            </Button>
           </Stack>
         </Box>
         <Box
