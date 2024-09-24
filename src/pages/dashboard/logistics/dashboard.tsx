@@ -60,14 +60,21 @@ const Page: PageType = () => {
                     spacing={4}
                   >
                     <Button
+                      variant="contained"
+                      href="/dashboard/logistics/fleet"
+                    >
+                      View Vehicles
+                    </Button>
+                    <Button
                       startIcon={(
                         <SvgIcon>
                           <PlusIcon />
                         </SvgIcon>
                       )}
                       variant="contained"
+                      href="/dashboard/logistics/fleet"
                     >
-                      Add Vehicle
+                      Add Vehicles
                     </Button>
                   </Stack>
                 </div>
@@ -77,33 +84,28 @@ const Page: PageType = () => {
               xs={12}
               md={3}
             >
-              <LogisticsRouteVehicles amount={38} />
+              <LogisticsRouteVehicles amount={5} />
             </Grid>
             <Grid
               xs={12}
               md={3}
             >
-              <LogisticsErrorVehicles amount={2} />
+              <LogisticsErrorVehicles amount={0} />
             </Grid>
             <Grid
               xs={12}
               md={3}
             >
-              <LogisticsDeviatedVehicles amount={1} />
+              <LogisticsDeviatedVehicles amount={0} />
             </Grid>
-            <Grid
-              xs={12}
-              md={3}
-            >
-              <LogisticsLateVehicles amount={2} />
-            </Grid>
+
             <Grid
               xs={12}
               lg={6}
             >
               <LogisticsVehiclesOverview
-                chartSeries={[38, 50, 12]}
-                labels={['Available', 'Out of service', 'On route']}
+                chartSeries={[5, 0]}
+                labels={['Available', 'Out of service']}
               />
             </Grid>
             <Grid
@@ -111,48 +113,41 @@ const Page: PageType = () => {
               lg={6}
             >
               <LogisticsVehiclesCondition
-                bad={12}
-                excellent={181}
-                good={24}
+                bad={0}
+                excellent={5}
+                good={0}
               />
             </Grid>
             <Grid xs={12}>
               <LogisticsVehiclesList
                 vehicles={[
                   {
-                    id: 'VOL-653CD1',
-                    endingRoute: 'Cleveland, Ohio, USA',
-                    startingRoute: 'Cleveland, Ohio, USA',
+                    id: '2025 Ford F150',
+                    endingRoute: 'issaquah WA',
+                    startingRoute: 'Seattle, WA',
                     status: 'success',
-                    temperature: 8,
-                    temperatureLabel: 'Very Good'
                   },
                   {
-                    id: 'VOL-653CD2',
-                    endingRoute: 'Cleveland, Ohio, USA',
-                    startingRoute: 'Cleveland, Ohio, USA',
-                    status: 'warning',
-                    temperature: 8,
-                    temperatureLabel: 'Very Good',
-                    warning: 'Temperature not optimal'
-                  },
-                  {
-                    id: 'VOL-653CD3',
-                    endingRoute: 'Cleveland, Ohio, USA',
-                    startingRoute: 'Cleveland, Ohio, USA',
-                    status: 'error',
-                    temperature: 8,
-                    temperatureLabel: 'Very Good',
-                    warning: 'ECU not responding'
-                  },
-                  {
-                    id: 'VOL-653CD4',
-                    endingRoute: 'Cleveland, Ohio, USA',
-                    startingRoute: 'Cleveland, Ohio, USA',
+                    id: '2025 Ford F150',
+                    endingRoute: 'sammamish WA',
+                    startingRoute: 'Seattle, WA',
                     status: 'success',
-                    temperature: 8,
-                    temperatureLabel: 'Very Good'
-                  }
+                  }, {
+                    id: '2025 Ford F150',
+                    endingRoute: 'seattle WA',
+                    startingRoute: 'Seattle, WA',
+                    status: 'success',
+                  }, {
+                    id: '2025 Ford F150',
+                    endingRoute: 'alberta, CA',
+                    startingRoute: 'Seattle, WA',
+                    status: 'success',
+                  }, {
+                    id: '2025 Ford F150',
+                    endingRoute: 'alberta, CA',
+                    startingRoute: 'Seattle, WA',
+                    status: 'success',
+                  },
                 ]}
               />
             </Grid>

@@ -16,9 +16,6 @@ const now = new Date();
 
 const tabs = [
   { label: 'General', value: 'general' },
-  { label: 'Billing', value: 'billing' },
-  { label: 'Team', value: 'team' },
-  { label: 'Notifications', value: 'notifications' },
   { label: 'Security', value: 'security' }
 ];
 
@@ -80,47 +77,7 @@ const Page: PageType = () => {
               name={user.name || ''}
             />
           )}
-          {currentTab === 'billing' && (
-            <AccountBillingSettings
-              plan="standard"
-              invoices={[
-                {
-                  id: '5547409069c59755261f5546',
-                  amount: 4.99,
-                  createdAt: subMonths(now, 1).getTime()
-                },
-                {
-                  id: 'a3e17f4b551ff8766903f31f',
-                  amount: 4.99,
-                  createdAt: subMonths(now, 2).getTime()
-                },
-                {
-                  id: '28ca7c66fc360d8203644256',
-                  amount: 4.99,
-                  createdAt: subMonths(now, 3).getTime()
-                }
-              ]}
-            />
-          )}
-          {currentTab === 'team' && (
-            <AccountTeamSettings
-              members={[
-                {
-                  avatar: '/assets/avatars/avatar-cao-yu.png',
-                  email: 'cao.yu@devias.io',
-                  name: 'Cao Yu',
-                  role: 'Owner'
-                },
-                {
-                  avatar: '/assets/avatars/avatar-siegbert-gottfried.png',
-                  email: 'siegbert.gottfried@devias.io',
-                  name: 'Siegbert Gottfried',
-                  role: 'Standard'
-                }
-              ]}
-            />
-          )}
-          {currentTab === 'notifications' && <AccountNotificationsSettings />}
+
           {currentTab === 'security' && (
             <AccountSecuritySettings
               loginEvents={[

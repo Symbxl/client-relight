@@ -23,8 +23,6 @@ interface Vehicle {
   endingRoute: string;
   startingRoute: string;
   status: 'success' | 'error' | 'warning';
-  temperature: number;
-  temperatureLabel: string;
   warning?: string;
 }
 
@@ -50,16 +48,10 @@ export const LogisticsVehiclesList: FC<LogisticsVehiclesListProps> = (props) => 
                   Location
                 </TableCell>
                 <TableCell>
-                  Ending Route
+                  Client Address
                 </TableCell>
                 <TableCell>
-                  Starting Route
-                </TableCell>
-                <TableCell>
-                  Warnings
-                </TableCell>
-                <TableCell>
-                  Refrigerator Temperature
+                  Vehicle Overview
                 </TableCell>
               </TableRow>
             </TableHead>
@@ -92,42 +84,9 @@ export const LogisticsVehiclesList: FC<LogisticsVehiclesListProps> = (props) => 
                     </Typography>
                   </TableCell>
                   <TableCell>
-                    <Typography variant="body2">
-                      {vehicle.startingRoute}
-                    </Typography>
-                  </TableCell>
-                  <TableCell>
                     <SeverityPill color={vehicle.status}>
                       {vehicle.warning || 'No warnings'}
                     </SeverityPill>
-                  </TableCell>
-                  <TableCell>
-                    <LinearProgress
-                      value={vehicle.temperature}
-                      variant="determinate"
-                    />
-                    <Box
-                      sx={{
-                        alignItems: 'center',
-                        display: 'flex',
-                        mt: 2
-                      }}
-                    >
-                      <Typography
-                        color="inherit"
-                        variant="inherit"
-                      >
-                        {vehicle.temperatureLabel}
-                      </Typography>
-                      <Box sx={{ flexGrow: 1 }} />
-                      <Typography
-                        color="text.secondary"
-                        variant="inherit"
-                      >
-                        {vehicle.temperature}
-                        °C
-                      </Typography>
-                    </Box>
                   </TableCell>
                 </TableRow>
               ))}

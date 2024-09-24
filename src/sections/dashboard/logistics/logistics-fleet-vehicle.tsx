@@ -98,12 +98,6 @@ export const LogisticsFleetVehicle: FC<LogisticsFleetVehicleProps> = (props) => 
                 sx={{ flexGrow: 1 }}
                 variant="determinate"
               />
-              <Typography
-                color="text.secondary"
-                variant="body2"
-              >
-                {vehicle.temp}
-              </Typography>
             </Stack>
           </Stack>
           <Timeline

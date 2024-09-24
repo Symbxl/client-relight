@@ -12,11 +12,8 @@ import type { Page as PageType } from 'src/types/page';
 const useVehicles = (): Vehicle[] => {
   return [
     {
-      id: 'VOL-653CD2',
-      location: 'New York, NY, USA',
-      latitude: 40.74759625348667,
-      longitude: -74.00422032706065,
-      temp: '8°C',
+      id: '2018 Ford F150',
+      location: 'Grande Prarie, Alberta, CA',
       startedAt: 'Sep 01, 7:53 AM',
       departedAt: 'Sep 01, 8:02 AM',
       arrivedAt: 'Sep 01, 8:18 AM'
@@ -24,9 +21,6 @@ const useVehicles = (): Vehicle[] => {
     {
       id: 'VOL-653CD3',
       location: 'New York, NY, USA',
-      latitude: 40.75374208987527,
-      longitude: -74.02878378307403,
-      temp: '6°C',
       startedAt: 'Sep 01, 8:21 AM',
       departedAt: 'Sep 01, 8:36 AM',
       arrivedAt: 'Sep 01, 9:54 AM'
@@ -34,9 +28,6 @@ const useVehicles = (): Vehicle[] => {
     {
       id: 'VOL-653CD4',
       location: 'New York, NY, USA',
-      latitude: 40.765281069832085,
-      longitude: -73.96392724511145,
-      temp: '8°C',
       startedAt: 'Sep 01, 6:34 AM',
       departedAt: 'Sep 01, 7:41 AM',
       arrivedAt: 'Sep 01, 9:20 AM'

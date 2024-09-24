@@ -38,7 +38,6 @@ import { getInitials } from 'src/utils/get-initials';
 const tabs = [
   { label: 'Details', value: 'details' },
   { label: 'Invoices', value: 'invoices' },
-  { label: 'Logs', value: 'logs' }
 ];
 
 const useCustomer = (): Customer | null => {

@@ -46,7 +46,6 @@ export const OverviewTransactions: FC<OverviewTransactionsProps> = (props) => {
     <Card>
       <CardHeader
         title="Latest Transactions"
-        subheader="Based on the selected period"
         sx={{ pb: 0 }}
       />
       <Tabs
@@ -56,14 +55,6 @@ export const OverviewTransactions: FC<OverviewTransactionsProps> = (props) => {
         <Tab
           label="All"
           value="all"
-        />
-        <Tab
-          label="Confirmed"
-          value="confirmed"
-        />
-        <Tab
-          label="Pending"
-          value="pending"
         />
       </Tabs>
       <Divider />

@@ -22,17 +22,7 @@ import {
   useMediaQuery
 } from '@mui/material';
 import { DatePicker } from '@mui/x-date-pickers/DatePicker';
-import { Scrollbar } from 'src/components/scrollbar';
 import type { InvoiceStatus } from 'src/types/invoice';
-
-const customers: string[] = [
-  'Blind Spots Inc.',
-  'Dispatcher Inc.',
-  'ACME SRL',
-  'Novelty I.S',
-  'Beauty Clinic SRL',
-  'Division Inc.'
-];
 
 export interface Filters {
   query?: string;
@@ -206,54 +196,6 @@ export const InvoiceListSidebar: FC<InvoiceListSidebarProps> = (props) => {
               value={filters.endDate || null}
             />
           </Stack>
-        </div>
-        <div>
-          <FormLabel
-            sx={{
-              display: 'block',
-              mb: 2
-            }}
-          >
-            From customer
-          </FormLabel>
-          <Box
-            sx={{
-              backgroundColor: (theme) => theme.palette.mode === 'dark'
-                ? 'neutral.800'
-                : 'neutral.50',
-              borderColor: 'divider',
-              borderRadius: 1,
-              borderStyle: 'solid',
-              borderWidth: 1
-            }}
-          >
-            <Scrollbar sx={{ maxHeight: 200 }}>
-              <FormGroup
-                sx={{
-                  py: 1,
-                  px: 1.5
-                }}
-              >
-                {customers.map((customer) => {
-                  const isChecked = filters.customers?.includes(customer);
-
-                  return (
-                    <FormControlLabel
-                      control={(
-                        <Checkbox
-                          checked={isChecked}
-                          onChange={handleCustomerToggle}
-                        />
-                      )}
-                      key={customer}
-                      label={customer}
-                      value={customer}
-                    />
-                  );
-                })}
-              </FormGroup>
-            </Scrollbar>
-          </Box>
         </div>
         <FormControlLabel
           control={(

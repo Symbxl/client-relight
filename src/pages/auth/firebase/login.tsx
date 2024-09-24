@@ -228,6 +228,8 @@ const Page: PageType = () => {
           sx={{ mt: 3 }}
         >
           <Alert severity="error">
+            <Alert severity="error">
+            </Alert>
             <div>
               You can use <b>demo@devias.io</b> and password <b>Password123!</b>
             </div>

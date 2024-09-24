@@ -36,8 +36,8 @@ export const LogisticsFleetMap: FC<LogisticsFleetMapProps> = (props) => {
         return VIEW_STATE;
       } else {
         return {
-          latitude: vehicle.latitude,
-          longitude: vehicle.longitude,
+          latitude: "1",
+          longitude: "2",
           zoom: 13
         };
       }
@@ -60,13 +60,7 @@ export const LogisticsFleetMap: FC<LogisticsFleetMapProps> = (props) => {
         flyOptions = {
           center: [VIEW_STATE.longitude, VIEW_STATE.latitude]
         };
-      } else {
-        flyOptions = {
-          center: [vehicle.longitude, vehicle.latitude]
-        };
       }
-
-      map.flyTo(flyOptions);
     },
     [vehicles, currentVehicleId]
   );
@@ -124,7 +118,6 @@ export const LogisticsFleetMap: FC<LogisticsFleetMapProps> = (props) => {
   return (
     <Map
       attributionControl={false}
-      initialViewState={viewState}
       mapStyle={mapStyle}
       mapboxAccessToken={mapboxConfig.apiKey}
       ref={mapRef}
@@ -134,8 +127,6 @@ export const LogisticsFleetMap: FC<LogisticsFleetMapProps> = (props) => {
       {vehicles.map((vehicle) => (
         <Marker
           key={vehicle.id}
-          latitude={vehicle.latitude}
-          longitude={vehicle.longitude}
           onClick={() => onVehicleSelect?.(vehicle.id)}
         >
           <Box

@@ -45,7 +45,7 @@ export const InvoiceListSummary: FC = () => (
                   Total
                 </Typography>
                 <Typography variant="h6">
-                  $5,300.00
+                  7500
                 </Typography>
                 <Typography
                   color="text.secondary"

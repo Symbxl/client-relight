@@ -63,24 +63,6 @@ export const useSections = () => {
               )
             },
             {
-              title: t(tokens.nav.analytics),
-              path: paths.dashboard.analytics,
-              icon: (
-                <SvgIcon fontSize="small">
-                  <BarChartSquare02Icon />
-                </SvgIcon>
-              )
-            },
-            {
-              title: t(tokens.nav.ecommerce),
-              path: paths.dashboard.ecommerce,
-              icon: (
-                <SvgIcon fontSize="small">
-                  <LineChartUp04Icon />
-                </SvgIcon>
-              )
-            },
-            {
               title: t(tokens.nav.crypto),
               path: paths.dashboard.crypto,
               icon: (
@@ -88,13 +70,25 @@ export const useSections = () => {
                   <CurrencyBitcoinCircleIcon />
                 </SvgIcon>
               ),
-              label: (
-                <Chip
-                  color="primary"
-                  label="New"
-                  size="small"
-                />
-              )
+            },
+            {
+              title: t(tokens.nav.academy),
+              path: paths.dashboard.academy.index,
+              icon: (
+                <SvgIcon fontSize="small">
+                  <GraduationHat01Icon />
+                </SvgIcon>
+              ),
+              items: [
+                {
+                  title: t(tokens.nav.dashboard),
+                  path: paths.dashboard.academy.index
+                },
+                {
+                  title: t(tokens.nav.course),
+                  path: paths.dashboard.academy.courseDetails
+                }
+              ]
             },
             {
               title: t(tokens.nav.account),
@@ -153,25 +147,6 @@ export const useSections = () => {
               ]
             },
             {
-              title: t(tokens.nav.orderList),
-              icon: (
-                <SvgIcon fontSize="small">
-                  <ShoppingCart01Icon />
-                </SvgIcon>
-              ),
-              path: paths.dashboard.orders.index,
-              items: [
-                {
-                  title: t(tokens.nav.list),
-                  path: paths.dashboard.orders.index
-                },
-                {
-                  title: t(tokens.nav.details),
-                  path: paths.dashboard.orders.details
-                }
-              ]
-            },
-            {
               title: t(tokens.nav.invoiceList),
               path: paths.dashboard.invoices.index,
               icon: (
@@ -209,135 +184,7 @@ export const useSections = () => {
                 }
               ]
             },
-            {
-              title: t(tokens.nav.academy),
-              path: paths.dashboard.academy.index,
-              icon: (
-                <SvgIcon fontSize="small">
-                  <GraduationHat01Icon />
-                </SvgIcon>
-              ),
-              items: [
-                {
-                  title: t(tokens.nav.dashboard),
-                  path: paths.dashboard.academy.index
-                },
-                {
-                  title: t(tokens.nav.course),
-                  path: paths.dashboard.academy.courseDetails
-                }
-              ]
-            },
-            {
-              title: t(tokens.nav.jobList),
-              path: paths.dashboard.jobs.index,
-              icon: (
-                <SvgIcon fontSize="small">
-                  <Building04Icon />
-                </SvgIcon>
-              ),
-              items: [
-                {
-                  title: t(tokens.nav.browse),
-                  path: paths.dashboard.jobs.index
-                },
-                {
-                  title: t(tokens.nav.details),
-                  path: paths.dashboard.jobs.companies.details
-                },
-                {
-                  title: t(tokens.nav.create),
-                  path: paths.dashboard.jobs.create
-                }
-              ]
-            },
-            {
-              title: t(tokens.nav.socialMedia),
-              path: paths.dashboard.social.index,
-              icon: (
-                <SvgIcon fontSize="small">
-                  <Share07Icon />
-                </SvgIcon>
-              ),
-              items: [
-                {
-                  title: t(tokens.nav.profile),
-                  path: paths.dashboard.social.profile
-                },
-                {
-                  title: t(tokens.nav.feed),
-                  path: paths.dashboard.social.feed
-                }
-              ]
-            },
-            {
-              title: t(tokens.nav.blog),
-              path: paths.dashboard.blog.index,
-              icon: (
-                <SvgIcon fontSize="small">
-                  <LayoutAlt02Icon />
-                </SvgIcon>
-              ),
-              items: [
-                {
-                  title: t(tokens.nav.postList),
-                  path: paths.dashboard.blog.index
-                },
-                {
-                  title: t(tokens.nav.postDetails),
-                  path: paths.dashboard.blog.postDetails
-                },
-                {
-                  title: t(tokens.nav.postCreate),
-                  path: paths.dashboard.blog.postCreate
-                }
-              ]
-            },
-            {
-              title: t(tokens.nav.fileManager),
-              path: paths.dashboard.fileManager,
-              icon: (
-                <SvgIcon fontSize="small">
-                  <Upload04Icon />
-                </SvgIcon>
-              )
-            },
-            {
-              title: t(tokens.nav.kanban),
-              path: paths.dashboard.kanban,
-              icon: (
-                <SvgIcon fontSize="small">
-                  <CheckDone01Icon />
-                </SvgIcon>
-              )
-            },
-            {
-              title: t(tokens.nav.mail),
-              path: paths.dashboard.mail,
-              icon: (
-                <SvgIcon fontSize="small">
-                  <Mail03Icon />
-                </SvgIcon>
-              )
-            },
-            {
-              title: t(tokens.nav.chat),
-              path: paths.dashboard.chat,
-              icon: (
-                <SvgIcon fontSize="small">
-                  <MessageChatSquareIcon />
-                </SvgIcon>
-              )
-            },
-            {
-              title: t(tokens.nav.calendar),
-              path: paths.dashboard.calendar,
-              icon: (
-                <SvgIcon fontSize="small">
-                  <CalendarIcon />
-                </SvgIcon>
-              )
-            }
+
           ]
         },
         {
@@ -419,15 +266,6 @@ export const useSections = () => {
               ]
             },
             {
-              title: t(tokens.nav.pricing),
-              path: paths.pricing,
-              icon: (
-                <SvgIcon fontSize="small">
-                  <CreditCard01Icon />
-                </SvgIcon>
-              )
-            },
-            {
               title: t(tokens.nav.checkout),
               path: paths.checkout,
               icon: (
@@ -469,87 +307,6 @@ export const useSections = () => {
             }
           ]
         },
-        {
-          subheader: 'Misc',
-          items: [
-            {
-              title: 'Level 0',
-              icon: (
-                <SvgIcon fontSize="small">
-                  <AlignLeft02Icon />
-                </SvgIcon>
-              ),
-              items: [
-                {
-                  title: 'Level 1a',
-                  items: [
-                    {
-                      title: 'Level 2a',
-                      items: [
-                        {
-                          title: 'Level 3a'
-                        },
-                        {
-                          title: 'Level 3b',
-                          disabled: true
-                        }
-                      ]
-                    },
-                    {
-                      title: 'Level 2b'
-                    }
-                  ]
-                },
-                {
-                  title: 'Level 1b'
-                }
-              ]
-            },
-            {
-              title: 'Disabled',
-              disabled: true,
-              icon: (
-                <SvgIcon fontSize="small">
-                  <XSquareIcon />
-                </SvgIcon>
-              )
-            },
-            {
-              title: 'Label',
-              icon: (
-                <SvgIcon fontSize="small">
-                  <File01Icon />
-                </SvgIcon>
-              ),
-              label: (
-                <Chip
-                  color="primary"
-                  label="New"
-                  size="small"
-                />
-              )
-            },
-            {
-              title: 'Blank',
-              path: paths.dashboard.blank,
-              icon: (
-                <SvgIcon fontSize="small">
-                  <File01Icon />
-                </SvgIcon>
-              )
-            },
-            {
-              title: 'External Link',
-              path: 'https://devias.io',
-              external: true,
-              icon: (
-                <SvgIcon fontSize="small">
-                  <File01Icon />
-                </SvgIcon>
-              )
-            }
-          ]
-        }
       ];
     },
     [t]

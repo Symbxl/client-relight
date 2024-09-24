@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import Settings04Icon from '@untitled-ui/icons-react/build/esm/Settings04';
 import { Box, Button, Stack, SvgIcon, Typography } from '@mui/material';
 import { useSettings } from 'src/hooks/use-settings';
+import { Logo } from '../../../components/logo';
 
 export const OverviewBanner: FC = (props) => {
   const { handleDrawerOpen } = useSettings();
@@ -26,34 +27,34 @@ export const OverviewBanner: FC = (props) => {
     >
       <Box
         sx={{
-          width: 200,
+          width: 40,
           '& img': {
             width: '100%'
           }
         }}
       >
-        <img src="/assets/person-standing.png" />
+        <Logo />
       </Box>
       <Box sx={{ flexGrow: 1 }}>
         <Typography
           color="primary.main"
           variant="overline"
         >
-          New v6 update
+          Relight Exterior Lighting
         </Typography>
         <Typography
           color="text.primary"
           sx={{ mt: 2 }}
           variant="h6"
         >
-          New update available!
+          Manage finances, inventory, and customers!
         </Typography>
         <Typography
           color="text.primary"
           sx={{ mt: 1 }}
           variant="body1"
         >
-          Your favorite template has a new trendy look, more customization options, screens & more.
+          Update the color & theme below
         </Typography>
         <Box sx={{ mt: 2 }}>
           <Button

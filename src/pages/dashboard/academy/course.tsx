@@ -19,55 +19,27 @@ import type { Page as PageType } from 'src/types/page';
 
 const useCourse = (): Course => {
   return {
-    id: 'c3a2b7331eef8329e2a87c79',
+    id: 'Equipment',
     chapters: [
       {
-        title: 'Introduction',
-        description: 'Introducing the app and how it works',
+        title: 'Safety',
+        description: 'How to wear proper equipment',
         lesson: ''
       },
       {
-        title: 'Installing required packages',
-        description: 'Introducing the library and how it works',
-        lesson: `
-Alias animi labque, deserunt distinctio eum excepturi fuga iure labore magni molestias mollitia natus, officia pofro quis sunt 
-temporibus veritatis voluptatem, voluptatum. Aut blanditiis esse et illum maxim, obcaecati possimus voluptate! Accusamus adipisci 
-amet aperiam, assumenda consequuntur fugiat inventore iusto magnam molestias natus necessitatibus, nulla pariatur.
-
-Adipisci alias animi debitis eos et impedit maiores, modi nam nobis officia optio perspiciatis, rerum. Accusantium esse nostrum odit quis quo:
-
-\`\`\`ts
-const mongoose = require('mongoose'),
-const uniqueValidator = require('mongoose-unique-validator'),
-const bcrypt = require('bcrypt'),
-
-const SALT_WORK_FACTOR = 10;
-
-const Schema = mongoose.Schema;
-  
-const Email = new Schema({
-  address: {
-    type: String,
-    lowercase: true,
-    required: [true, "can't be blank"],
-    match: [/\\S+@\\S+\\.\\S+/, 'is invalid'],
-    index: true,
-  },
-  // Change the default to true if you don't need to validate a new user's email address
-  validated: { type: Boolean, default: false },
-});
-\`\`\`
-`
+        title: 'Store & Track Equipment',
+        description: 'How to wear proper equipment',
+        lesson: ''
       },
       {
-        title: 'Step title',
-        description: 'Introducing the library and how it works',
+        title: 'Safety',
+        description: 'How to wear proper equipment',
         lesson: ''
-      }
+      },
     ],
     description: 'Introductory course for design and framework basics',
     duration: '78 hours',
-    progress: 50,
+    progress: 100,
     title: 'React and Redux Tutorial'
   };
 };
@@ -115,7 +87,7 @@ const Page: PageType = () => {
                       <ArrowLeftIcon />
                     </SvgIcon>
                     <Typography variant="subtitle2">
-                      Academy
+                      Training
                     </Typography>
                   </Link>
                 </div>

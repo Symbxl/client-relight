@@ -28,13 +28,13 @@ export const TenantSwitch: FC<TenantSwitchProps> = (props) => {
             color="inherit"
             variant="h6"
           >
-            Devias
+            Relight
           </Typography>
           <Typography
             color="neutral.400"
             variant="body2"
           >
-            Production
+            Dashboard
           </Typography>
         </Box>
         <IconButton
