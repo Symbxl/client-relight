@@ -96,6 +96,21 @@ export const HomeFeatures: FC = () => {
             xs={12}
             md={6}
           >
+            <Box
+              sx={{
+                '& img': {
+                  width: '100%',
+                  borderRadius: 2.5,
+                }
+              }}
+            >
+              <img src={image} />
+            </Box>
+          </Grid>
+          <Grid
+            xs={12}
+            md={6}
+          >
             <Stack spacing={2}>
               {features.map((feature, index) => {
                 const isActive = activeFeature === index;
@@ -165,21 +180,6 @@ export const HomeFeatures: FC = () => {
                 );
               })}
             </Stack>
-          </Grid>
-          <Grid
-            xs={12}
-            md={6}
-          >
-            <Box
-              sx={{
-                '& img': {
-                  width: '100%',
-                  borderRadius: 2.5,
-                }
-              }}
-            >
-              <img src={image} />
-            </Box>
           </Grid>
         </Grid>
       </Container>
