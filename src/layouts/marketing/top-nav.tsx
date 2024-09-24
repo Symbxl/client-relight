@@ -149,7 +149,7 @@ export const TopNav: FC<TopNavProps> = (props) => {
                     }
                   }}
                 >
-                  Relight Exterior Lighting <span>HOA's, Residential & Commercial</span>
+                  Relight Exterior Lighting <span>Residential, Commercial & HOA</span>
                 </Box>
               )}
             </Stack>
