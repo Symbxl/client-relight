@@ -96,7 +96,7 @@ export const AccountPopover: FC<AccountPopoverProps> = (props) => {
           color="text.secondary"
           variant="body2"
         >
-          demo@devias.io
+          zach@relight.ca
         </Typography>
       </Box>
       <Divider />

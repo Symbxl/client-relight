@@ -30,7 +30,7 @@ interface Values {
 }
 
 const initialValues: Values = {
-  email: 'demo@devias.io',
+  email: 'zach@relight.ca',
   password: 'Password123!',
   submit: null
 };
@@ -160,7 +160,7 @@ const Page: PageType = () => {
         >
           <Alert severity="error">
             <div>
-              You can use <b>demo@devias.io</b> and password <b>Password123!</b>
+              You can use <b>zach@relight.ca</b> and password <b>Password123!</b>
             </div>
           </Alert>
           <AuthIssuer issuer={issuer} />

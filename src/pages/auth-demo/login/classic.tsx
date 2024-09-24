@@ -25,7 +25,7 @@ interface Values {
 }
 
 const initialValues: Values = {
-  email: 'demo@devias.io',
+  email: 'zach@relight.ca',
   password: 'Password123!',
   submit: null
 };
@@ -46,7 +46,7 @@ const Page: PageType = () => {
   const formik = useFormik({
     initialValues,
     validationSchema,
-    onSubmit: (): void => {}
+    onSubmit: (): void => { }
   });
 
   return (

@@ -77,7 +77,7 @@ export const Layout: FC<LayoutProps> = (props) => {
                   }
                 }}
               >
-                Devias Kit <span>PRO</span>
+                Relight <span>ADMIN DASHBOARD</span>
               </Box>
             </Stack>
           </Stack>
