@@ -16,8 +16,8 @@ const Page: PageType = () => {
       <Seo title='Relight Exterior Lighting' />
       <main>
         <HomeHero />
-        <HomeFeatures />
         <HomeCta />
+        <HomeFeatures />
         <HomeInfo />
         <HomeApp />
         <HomeFaqs />
