@@ -1,5 +1,5 @@
 import type { FC } from 'react';
-import { Box, Button, Container, Stack, Typography } from '@mui/material';
+import { Box, Container, Stack, Typography } from '@mui/material';
 
 export const HomeCta: FC = () => (
   <Box
@@ -18,14 +18,14 @@ export const HomeCta: FC = () => (
           color="inherit"
           variant="h3"
         >
-          Start saving time today!
+          Professional Installation
         </Typography>
         <Typography
           align="center"
           color="inherit"
           variant="subtitle2"
         >
-          Not just a set of tools, the package includes ready-to-deploy conceptual applications written in JavaScript & TypeScript.
+          Every home is serviced by the trained professionals to make sure you're lighting is perfect.
         </Typography>
       </Stack>
       <Stack
@@ -35,14 +35,16 @@ export const HomeCta: FC = () => (
         spacing={2}
         sx={{ mt: 3 }}
       >
-        <Button
-          component="a"
-          href="https://mui.com/store/items/devias-kit-pro"
-          target="_blank"
-          variant="contained"
+        <Box
+          sx={{
+            '& img': {
+              width: '100%',
+              borderRadius: 2.5,
+            }
+          }}
         >
-          Purchase Now
-        </Button>
+          <img src="https://framerusercontent.com/images/6C149iYRFXIpVognqz1kfkDI5E.webp?scale-down-to=1024" />
+        </Box>
       </Stack>
     </Container>
   </Box>

@@ -36,7 +36,6 @@ const useCourses = (): Course[] => {
       progress: 100,
       title: 'How to properly use & store equipment',
     },
-
   ];
 };
 

@@ -7,15 +7,17 @@ import { HomeReviews } from 'src/sections/home/home-reviews';
 import type { Page as PageType } from 'src/types/page';
 import HomeInfo from '../sections/home/home-info';
 import { HomeApp } from '../sections/home/home-app';
+import { HomeCta } from '../sections/home/home-cta';
 const Page: PageType = () => {
   usePageView();
 
   return (
     <>
-      <Seo title='Relight' />
+      <Seo title='Relight Exterior Lighting' />
       <main>
         <HomeHero />
         <HomeFeatures />
+        <HomeCta />
         <HomeInfo />
         <HomeApp />
         <HomeFaqs />

@@ -152,7 +152,6 @@ export const Footer: FC = (props) => (
                 Relight Exterior Lighting
               </Box>
             </Stack>
-
             <Typography
               color="text.secondary"
               variant="caption"

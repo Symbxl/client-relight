@@ -71,6 +71,6 @@ export const invoice: Invoice = {
   number: "INV-0019",
   status: "paid",
   subtotalAmount: 50.0,
-  taxAmount: 55.5,
-  totalAmount: 2500.5,
+  taxAmount: 155.5,
+  totalAmount: 2555.5,
 };
