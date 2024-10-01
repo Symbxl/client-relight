@@ -31,7 +31,7 @@ interface Values {
 
 const initialValues: Values = {
   email: 'zach@relight.ca',
-  password: 'Password123!',
+  password: 'Placeholder9!',
   submit: null
 };
 
@@ -160,7 +160,7 @@ const Page: PageType = () => {
         >
           <Alert severity="error">
             <div>
-              You can use <b>zach@relight.ca</b> and password <b>Password123!</b>
+              You can use <b>zach@relight.ca</b> and password <b>Placeholder9!</b>
             </div>
           </Alert>
           <AuthIssuer issuer={issuer} />
