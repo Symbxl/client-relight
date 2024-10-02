@@ -36,7 +36,7 @@ export const HomeApp: FC = () => (
           target="_blank"
           variant="contained"
         >
-          Download on the App Store
+          Apple App Store
         </Button>
         <Button
           component="a"
@@ -44,7 +44,7 @@ export const HomeApp: FC = () => (
           target="_blank"
           variant="contained"
         >
-          Get it on Google Play
+          Android Download
         </Button>
       </Stack>
       <Stack
