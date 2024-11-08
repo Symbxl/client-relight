@@ -164,11 +164,11 @@ export const TopNav: FC<TopNavProps> = (props) => {
           >
             <Button
               component={RouterLink}
-              href={paths.contact}
+              href="tel:+14254651290"
               size={mdUp ? 'medium' : 'small'}
               variant="contained"
             >
-              Get a quote
+              425-465-1290
             </Button>
           </Stack>
         </Stack>
